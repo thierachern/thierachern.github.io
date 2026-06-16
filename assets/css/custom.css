@@ -1,0 +1,78 @@
+/* ============================================================
+   Custom overrides for Alpine View Thierachern
+   Loaded after main.css to tweak the base "Story" template.
+   ============================================================ */
+
+/* --- Gallery thumbnails ---------------------------------------
+   The style2 carousel stretches every tile to match the tallest
+   (portrait) photo, leaving landscape photos with an empty gap
+   that the hover caption fills with grey. Giving each thumbnail a
+   uniform height with object-fit keeps tiles compact and makes the
+   hover caption line up exactly with the image.
+   ------------------------------------------------------------- */
+.gallery.style2 article .image img {
+	height: 16rem;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 736px) {
+	.gallery.style2 article .image img {
+		height: 13rem;
+	}
+}
+
+/* --- Nearby attractions cards -------------------------------- */
+.attractions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
+	margin-top: 2.5rem;
+}
+
+.attractions .card {
+	flex: 1 1 16rem;
+	max-width: 20rem;
+	background: #ffffff;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+
+.attractions .card .thumb {
+	display: block;
+	width: 100%;
+	height: 14rem;
+	object-fit: cover;
+}
+
+.attractions .card .card-body {
+	padding: 1.5rem 1.75rem 1.875rem;
+}
+
+.attractions .card .meta {
+	display: block;
+	font-size: 0.7rem;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	opacity: 0.6;
+	margin-bottom: 0.5rem;
+}
+
+.attractions .card h3 {
+	margin-bottom: 0.5rem;
+}
+
+.attractions .card p {
+	font-size: 0.9rem;
+	margin-bottom: 0;
+}
+
+.attractions-credit {
+	margin-top: 2rem;
+	font-size: 0.7rem;
+	opacity: 0.55;
+}
