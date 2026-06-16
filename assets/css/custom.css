@@ -3,6 +3,26 @@
    Loaded after main.css to tweak the base "Story" template.
    ============================================================ */
 
+/* --- Typography ----------------------------------------------
+   Replace the default tight, light Source Sans Pro with a warmer
+   pairing: Fraunces (soft serif) for headings + Nunito Sans
+   (rounded, friendly sans) for body text.
+   ------------------------------------------------------------- */
+body,
+input,
+select,
+textarea,
+button,
+.button {
+	font-family: "Nunito Sans", Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Fraunces", Georgia, "Times New Roman", serif;
+	font-weight: 600;
+	letter-spacing: -0.005em;
+}
+
 /* --- Gallery thumbnails ---------------------------------------
    The style2 carousel stretches every tile to match the tallest
    (portrait) photo, leaving landscape photos with an empty gap
