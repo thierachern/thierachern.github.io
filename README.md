@@ -1,9 +1,14 @@
-# Chalet Alpenblick — Thierachern
+# Alpine View Thierachern
 
-A one-page website showcasing **Chalet Alpenblick**, a short-term holiday rental in
-Thierachern, above Lake Thun in the Bernese Oberland, Switzerland.
+A one-page website showcasing **Alpine View Thierachern**, an independent holiday
+house with stunning Alpine views and a Mediterranean garden in Thierachern, above
+Lake Thun in the Bernese Oberland, Switzerland.
 
-The site is a single static page (`index.html`) and is published with GitHub Pages at
+All bookings are handled through Airbnb — the site links straight to the listing
+rather than taking reservations directly:
+<https://www.airbnb.com/h/thierachern>
+
+The site is a single static page (`index.html`) published with GitHub Pages at
 <https://thierachern.github.io>.
 
 ## Structure
@@ -18,23 +23,19 @@ LICENSE.txt         # License for the underlying template
 ## Editing content
 
 All copy lives directly in `index.html`, organised into clearly commented sections:
-banner, welcome, location, things to do, gallery, amenities, booking and footer.
+banner, the house, garden & views, location, gallery, amenities, booking CTA and
+footer. Every "Book" / "Check Availability" button points to the Airbnb listing.
 
 ### Photos
 
-Replace the placeholder images in `images/` with real photos of the property:
+The photos in `images/` are the property's real listing photos:
 
-- `images/banner.jpg` — hero image
+- `images/banner.jpg` — hero (house & garden)
 - `images/spotlight01–03.jpg` — section images
 - `images/gallery/fulls/01–12.jpg` and `images/gallery/thumbs/01–12.jpg` — gallery
 
-Keep the same filenames (or update the references in `index.html`).
-
-### Booking form
-
-The booking form currently posts to a placeholder Formspree endpoint. Swap the
-`action` URL in the booking `<form>` for your own form/email service to receive
-requests.
+To swap any photo, replace the file keeping the same name (or update the reference
+in `index.html`).
 
 ## Credits
 
