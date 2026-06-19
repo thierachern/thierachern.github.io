@@ -35,6 +35,9 @@
 			loc_p2: "Hike, ski, swim, cruise the lake or simply enjoy the view with a glass of local wine — whatever the season, this is the perfect base for your Swiss adventure.",
 			btn_check_avail: "Check Availability",
 
+			weather_h2: "Weather in Thierachern",
+			weather_sub: "Plan your trip &mdash; here&rsquo;s the current local forecast.",
+
 			gallery_h2: "Take a look inside",
 			gallery_p: "From the open-plan living spaces to the bedrooms, bathrooms and that unforgettable mountain view. Click any photo to view it full size.",
 			g1_h: "Dining &amp; Living", g1_p: "Open-plan space with a marble dining table and lounge.",
@@ -104,6 +107,9 @@
 			loc_p1: "Thierachern liegt auf einem sonnigen Plateau, nur wenige Minuten von der mittelalterlichen Altstadt von Thun und den türkisfarbenen Ufern des Thunersees entfernt. Stockhorn, Niesen, Interlaken und die Gipfel der Jungfrau-Region sind bequem erreichbar.",
 			loc_p2: "Wandern, Skifahren, Schwimmen, eine Schifffahrt auf dem See oder einfach den Ausblick bei einem Glas Wein geniessen — zu jeder Jahreszeit der perfekte Ausgangspunkt für Ihr Schweizer Abenteuer.",
 			btn_check_avail: "Verfügbarkeit prüfen",
+
+			weather_h2: "Wetter in Thierachern",
+			weather_sub: "Planen Sie Ihre Reise &mdash; hier die aktuelle Vorhersage vor Ort.",
 
 			gallery_h2: "Ein Blick ins Innere",
 			gallery_p: "Von den offenen Wohnräumen über die Schlaf- und Badezimmer bis hin zum unvergesslichen Bergblick. Klicken Sie auf ein Foto, um es in voller Grösse zu sehen.",
@@ -175,6 +181,9 @@
 			loc_p2: "Randonnée, ski, baignade, croisière sur le lac ou simplement profiter de la vue avec un verre de vin local — quelle que soit la saison, c'est le point de départ idéal pour votre aventure suisse.",
 			btn_check_avail: "Vérifier les disponibilités",
 
+			weather_h2: "Météo à Thierachern",
+			weather_sub: "Préparez votre séjour &mdash; voici les prévisions locales actuelles.",
+
 			gallery_h2: "Jetez un œil à l'intérieur",
 			gallery_p: "Des espaces de vie ouverts aux chambres, aux salles de bain et à cette vue inoubliable sur la montagne. Cliquez sur une photo pour la voir en grand.",
 			g1_h: "Salle à manger &amp; salon", g1_p: "Espace ouvert avec table à manger en marbre et coin salon.",
@@ -244,6 +253,9 @@
 			loc_p1: "Thierachern si trova su un soleggiato altopiano, a pochi minuti dal centro storico medievale di Thun e dalle rive turchesi del lago di Thun. Stockhorn, Niesen, Interlaken e le cime della regione della Jungfrau sono facilmente raggiungibili.",
 			loc_p2: "Escursioni, sci, nuoto, una crociera sul lago o semplicemente godersi il panorama con un bicchiere di vino locale — in qualsiasi stagione, è il punto di partenza perfetto per la vostra avventura svizzera.",
 			btn_check_avail: "Verifica disponibilità",
+
+			weather_h2: "Meteo a Thierachern",
+			weather_sub: "Pianifica il tuo viaggio &mdash; ecco le previsioni locali attuali.",
 
 			gallery_h2: "Date un'occhiata all'interno",
 			gallery_p: "Dagli spazi open space alle camere da letto, ai bagni e a quella indimenticabile vista sulle montagne. Cliccate su una foto per vederla a grandezza naturale.",
@@ -323,7 +335,13 @@
 			btns[j].setAttribute("aria-pressed", isActive ? "true" : "false");
 		}
 
+		window.AVT_LANG = lang;
 		setStored(lang);
+
+		// Let other widgets (e.g. the weather card) re-localize.
+		try {
+			document.dispatchEvent(new CustomEvent("avt:langchange", { detail: { lang: lang } }));
+		} catch (e) {}
 	}
 
 	function init() {

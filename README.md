@@ -38,6 +38,16 @@ shows before the script runs / if JavaScript is disabled). To add a new
 translatable string, give the element a `data-i18n` attribute and add the key to
 each language block.
 
+## Weather
+
+The location section is followed by a **live weather card** for Thierachern
+(current conditions plus a 3‑day forecast with sunny / cloudy / rainy / snow /
+thunder / fog icons). Data comes from the free, keyless
+[Open‑Meteo](https://open-meteo.com/) API, fetched client‑side in
+`assets/js/weather.js`. The card re‑localizes with the language switcher and, if
+the API is unreachable, the whole section simply stays hidden (no broken UI).
+Coordinates are set near the top of `weather.js` (`LAT` / `LON`).
+
 ## Editing content
 
 All copy lives directly in `index.html`, organised into clearly commented sections:
