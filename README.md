@@ -20,6 +20,24 @@ images/             # Banner, spotlight and gallery photos + favicon
 LICENSE.txt         # License for the underlying template
 ```
 
+## Languages
+
+The site is available in **English (default), German, French and Italian**. A flag
+switcher (top‑right of the page) lets visitors change language; the choice is
+remembered in the browser via `localStorage`.
+
+Translation is handled client‑side:
+
+- Each translatable element in `index.html` carries a `data-i18n="key"` attribute.
+- All strings for every language live in `assets/js/i18n.js` (one block per
+  language: `en`, `de`, `fr`, `it`).
+
+To change wording, edit the matching key in **every** language block in
+`assets/js/i18n.js` (and the English default text in `index.html`, which is what
+shows before the script runs / if JavaScript is disabled). To add a new
+translatable string, give the element a `data-i18n` attribute and add the key to
+each language block.
+
 ## Editing content
 
 All copy lives directly in `index.html`, organised into clearly commented sections:

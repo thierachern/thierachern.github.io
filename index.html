@@ -25,6 +25,43 @@
 	</head>
 	<body class="is-preload">
 
+		<!-- Language switcher -->
+			<nav id="lang-switcher" aria-label="Select language">
+				<button type="button" class="lang-btn" data-lang="en" lang="en" title="English" aria-label="English">
+					<svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img">
+						<clipPath id="flag-gb"><rect width="60" height="30"/></clipPath>
+						<g clip-path="url(#flag-gb)">
+							<rect width="60" height="30" fill="#012169"/>
+							<path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/>
+							<path d="M0,0 60,30 M60,0 0,30" stroke="#C8102E" stroke-width="4"/>
+							<path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/>
+							<path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6"/>
+						</g>
+					</svg>
+				</button>
+				<button type="button" class="lang-btn" data-lang="de" lang="de" title="Deutsch" aria-label="Deutsch">
+					<svg viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img">
+						<rect width="5" height="3" y="0" fill="#000000"/>
+						<rect width="5" height="2" y="1" fill="#DD0000"/>
+						<rect width="5" height="1" y="2" fill="#FFCE00"/>
+					</svg>
+				</button>
+				<button type="button" class="lang-btn" data-lang="fr" lang="fr" title="Français" aria-label="Français">
+					<svg viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img">
+						<rect width="1" height="2" x="0" fill="#0055A4"/>
+						<rect width="1" height="2" x="1" fill="#FFFFFF"/>
+						<rect width="1" height="2" x="2" fill="#EF4135"/>
+					</svg>
+				</button>
+				<button type="button" class="lang-btn" data-lang="it" lang="it" title="Italiano" aria-label="Italiano">
+					<svg viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img">
+						<rect width="1" height="2" x="0" fill="#009246"/>
+						<rect width="1" height="2" x="1" fill="#FFFFFF"/>
+						<rect width="1" height="2" x="2" fill="#CE2B37"/>
+					</svg>
+				</button>
+			</nav>
+
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
@@ -32,10 +69,10 @@
 					<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Alpine View<br />Thierachern</h1>
-							<p class="major">A comfortable, independent house with stunning views of the Alps and a lush Mediterranean garden — your peaceful base in the heart of the Bernese Oberland, Switzerland.</p>
+							<p class="major" data-i18n="hero_p">A comfortable, independent house with stunning views of the Alps and a lush Mediterranean garden — your peaceful base in the heart of the Bernese Oberland, Switzerland.</p>
 							<ul class="actions stacked">
-								<li><a href="https://www.airbnb.com/h/thierachern" target="_blank" rel="noopener" class="button big wide">Book on Airbnb</a></li>
-								<li><a href="#welcome" class="button big wide smooth-scroll-middle">Explore the House</a></li>
+								<li><a href="https://www.airbnb.com/h/thierachern" target="_blank" rel="noopener" class="button big wide" data-i18n="btn_book">Book on Airbnb</a></li>
+								<li><a href="#welcome" class="button big wide smooth-scroll-middle" data-i18n="btn_explore_house">Explore the House</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -46,11 +83,11 @@
 				<!-- Welcome / The House -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="welcome">
 						<div class="content">
-							<h2>Your own independent house</h2>
-							<p>Relax in this comfortable, independent single house offering stunning views of the Alps. Light-filled living spaces, a welcoming lounge and a fully equipped kitchen make it easy to feel at home from the moment you arrive.</p>
-							<p>With four bedrooms and room for up to seven guests, it&rsquo;s ideal for couples, families or solo travellers seeking tranquillity and scenic beauty.</p>
+							<h2 data-i18n="welcome_h2">Your own independent house</h2>
+							<p data-i18n="welcome_p1">Relax in this comfortable, independent single house offering stunning views of the Alps. Light-filled living spaces, a welcoming lounge and a fully equipped kitchen make it easy to feel at home from the moment you arrive.</p>
+							<p data-i18n="welcome_p2">With four bedrooms and room for up to seven guests, it&rsquo;s ideal for couples, families or solo travellers seeking tranquillity and scenic beauty.</p>
 							<ul class="actions stacked">
-								<li><a href="#gallery" class="button smooth-scroll-middle">See the House</a></li>
+								<li><a href="#gallery" class="button smooth-scroll-middle" data-i18n="btn_see_house">See the House</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -61,11 +98,11 @@
 				<!-- Garden & Views -->
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="views">
 						<div class="content">
-							<h2>Mediterranean garden, Alpine horizon</h2>
-							<p>Surrounded by a lush Mediterranean garden, the home features a sun-kissed facade that&rsquo;s perfect for peaceful mornings and serene evenings. Step onto the patio or balcony and the snow-capped peaks of the Bernese Alps stretch out before you.</p>
-							<p>It&rsquo;s a rare combination — a warm, green garden retreat with one of Switzerland&rsquo;s great mountain panoramas right on the doorstep.</p>
+							<h2 data-i18n="views_h2">Mediterranean garden, Alpine horizon</h2>
+							<p data-i18n="views_p1">Surrounded by a lush Mediterranean garden, the home features a sun-kissed facade that&rsquo;s perfect for peaceful mornings and serene evenings. Step onto the patio or balcony and the snow-capped peaks of the Bernese Alps stretch out before you.</p>
+							<p data-i18n="views_p2">It&rsquo;s a rare combination — a warm, green garden retreat with one of Switzerland&rsquo;s great mountain panoramas right on the doorstep.</p>
 							<ul class="actions stacked">
-								<li><a href="#amenities" class="button smooth-scroll-middle">What&rsquo;s Included</a></li>
+								<li><a href="#amenities" class="button smooth-scroll-middle" data-i18n="btn_whats_included">What&rsquo;s Included</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -76,11 +113,11 @@
 				<!-- Location -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="location">
 						<div class="content">
-							<h2>Above Lake Thun, in the Bernese Oberland</h2>
-							<p>Thierachern sits on a sunny plateau just minutes from Thun&rsquo;s medieval old town and the turquoise shores of Lake Thun (Thunersee). The Stockhorn, Niesen, Interlaken and the peaks of the Jungfrau region are all within easy reach.</p>
-							<p>Hike, ski, swim, cruise the lake or simply enjoy the view with a glass of local wine — whatever the season, this is the perfect base for your Swiss adventure.</p>
+							<h2 data-i18n="loc_h2">Above Lake Thun, in the Bernese Oberland</h2>
+							<p data-i18n="loc_p1">Thierachern sits on a sunny plateau just minutes from Thun&rsquo;s medieval old town and the turquoise shores of Lake Thun (Thunersee). The Stockhorn, Niesen, Interlaken and the peaks of the Jungfrau region are all within easy reach.</p>
+							<p data-i18n="loc_p2">Hike, ski, swim, cruise the lake or simply enjoy the view with a glass of local wine — whatever the season, this is the perfect base for your Swiss adventure.</p>
 							<ul class="actions stacked">
-								<li><a href="https://www.airbnb.com/h/thierachern" target="_blank" rel="noopener" class="button">Check Availability</a></li>
+								<li><a href="https://www.airbnb.com/h/thierachern" target="_blank" rel="noopener" class="button" data-i18n="btn_check_avail">Check Availability</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -91,8 +128,8 @@
 				<!-- Gallery -->
 					<section class="wrapper style1 align-center" id="gallery">
 						<div class="inner">
-							<h2>Take a look inside</h2>
-							<p>From the open-plan living spaces to the bedrooms, bathrooms and that unforgettable mountain view. Click any photo to view it full size.</p>
+							<h2 data-i18n="gallery_h2">Take a look inside</h2>
+							<p data-i18n="gallery_p">From the open-plan living spaces to the bedrooms, bathrooms and that unforgettable mountain view. Click any photo to view it full size.</p>
 						</div>
 
 						<!-- Gallery -->
@@ -102,8 +139,8 @@
 										<img src="images/gallery/thumbs/01.jpg" alt="Open-plan dining and living area" />
 									</a>
 									<div class="caption">
-										<h3>Dining &amp; Living</h3>
-										<p>Open-plan space with a marble dining table and lounge.</p>
+										<h3 data-i18n="g1_h">Dining &amp; Living</h3>
+										<p data-i18n="g1_p">Open-plan space with a marble dining table and lounge.</p>
 									</div>
 								</article>
 								<article>
@@ -111,8 +148,8 @@
 										<img src="images/gallery/thumbs/02.jpg" alt="Modern kitchen" />
 									</a>
 									<div class="caption">
-										<h3>The Kitchen</h3>
-										<p>Fully equipped, with dishwasher and espresso machine.</p>
+										<h3 data-i18n="g2_h">The Kitchen</h3>
+										<p data-i18n="g2_p">Fully equipped, with dishwasher and espresso machine.</p>
 									</div>
 								</article>
 								<article>
@@ -120,8 +157,8 @@
 										<img src="images/gallery/thumbs/03.jpg" alt="Living room" />
 									</a>
 									<div class="caption">
-										<h3>Living Room</h3>
-										<p>Unwind and relax after a day in the mountains.</p>
+										<h3 data-i18n="g3_h">Living Room</h3>
+										<p data-i18n="g3_p">Unwind and relax after a day in the mountains.</p>
 									</div>
 								</article>
 								<article>
@@ -129,8 +166,8 @@
 										<img src="images/gallery/thumbs/04.jpg" alt="Bedroom opening to the garden" />
 									</a>
 									<div class="caption">
-										<h3>Garden Bedroom</h3>
-										<p>Bright double room opening to the garden.</p>
+										<h3 data-i18n="g4_h">Garden Bedroom</h3>
+										<p data-i18n="g4_p">Bright double room opening to the garden.</p>
 									</div>
 								</article>
 								<article>
@@ -138,8 +175,8 @@
 										<img src="images/gallery/thumbs/05.jpg" alt="Double bedroom" />
 									</a>
 									<div class="caption">
-										<h3>Double Bedroom</h3>
-										<p>Restful and comfortable, with fresh linen.</p>
+										<h3 data-i18n="g5_h">Double Bedroom</h3>
+										<p data-i18n="g5_p">Restful and comfortable, with fresh linen.</p>
 									</div>
 								</article>
 								<article>
@@ -147,8 +184,8 @@
 										<img src="images/gallery/thumbs/06.jpg" alt="Bedroom with balcony and mountain view" />
 									</a>
 									<div class="caption">
-										<h3>Room with a View</h3>
-										<p>Wake up to the mountains from your own balcony.</p>
+										<h3 data-i18n="g6_h">Room with a View</h3>
+										<p data-i18n="g6_p">Wake up to the mountains from your own balcony.</p>
 									</div>
 								</article>
 								<article>
@@ -156,8 +193,8 @@
 										<img src="images/gallery/thumbs/07.jpg" alt="Spacious bedroom" />
 									</a>
 									<div class="caption">
-										<h3>Spacious Bedroom</h3>
-										<p>Plenty of room, with wardrobe and seating.</p>
+										<h3 data-i18n="g7_h">Spacious Bedroom</h3>
+										<p data-i18n="g7_p">Plenty of room, with wardrobe and seating.</p>
 									</div>
 								</article>
 								<article>
@@ -165,8 +202,8 @@
 										<img src="images/gallery/thumbs/08.jpg" alt="Bathroom with shower and bathtub" />
 									</a>
 									<div class="caption">
-										<h3>Main Bathroom</h3>
-										<p>Walk-in shower and a relaxing bathtub.</p>
+										<h3 data-i18n="g8_h">Main Bathroom</h3>
+										<p data-i18n="g8_p">Walk-in shower and a relaxing bathtub.</p>
 									</div>
 								</article>
 								<article>
@@ -174,8 +211,8 @@
 										<img src="images/gallery/thumbs/09.jpg" alt="Second bathroom" />
 									</a>
 									<div class="caption">
-										<h3>Second Bathroom</h3>
-										<p>Sleek finishes and a spacious walk-in shower.</p>
+										<h3 data-i18n="g9_h">Second Bathroom</h3>
+										<p data-i18n="g9_p">Sleek finishes and a spacious walk-in shower.</p>
 									</div>
 								</article>
 								<article>
@@ -183,8 +220,8 @@
 										<img src="images/gallery/thumbs/10.jpg" alt="Shower room" />
 									</a>
 									<div class="caption">
-										<h3>Shower Room</h3>
-										<p>A handy extra bathroom for busy mornings.</p>
+										<h3 data-i18n="g10_h">Shower Room</h3>
+										<p data-i18n="g10_p">A handy extra bathroom for busy mornings.</p>
 									</div>
 								</article>
 								<article>
@@ -192,8 +229,8 @@
 										<img src="images/gallery/thumbs/11.jpg" alt="Home gym" />
 									</a>
 									<div class="caption">
-										<h3>Home Gym</h3>
-										<p>Keep up your routine without leaving the house.</p>
+										<h3 data-i18n="g11_h">Home Gym</h3>
+										<p data-i18n="g11_p">Keep up your routine without leaving the house.</p>
 									</div>
 								</article>
 								<article>
@@ -201,8 +238,8 @@
 										<img src="images/gallery/thumbs/12.jpg" alt="Mountain view from the balcony" />
 									</a>
 									<div class="caption">
-										<h3>Alpine Views</h3>
-										<p>Snow-capped peaks straight from the balcony.</p>
+										<h3 data-i18n="g12_h">Alpine Views</h3>
+										<p data-i18n="g12_p">Snow-capped peaks straight from the balcony.</p>
 									</div>
 								</article>
 							</div>
@@ -212,68 +249,68 @@
 				<!-- Amenities -->
 					<section class="wrapper style1 align-center" id="amenities">
 						<div class="inner">
-							<h2>What&rsquo;s included</h2>
-							<p>The whole house is yours, thoughtfully furnished for a relaxed and self-sufficient stay.</p>
+							<h2 data-i18n="amen_h2">What&rsquo;s included</h2>
+							<p data-i18n="amen_p">The whole house is yours, thoughtfully furnished for a relaxed and self-sufficient stay.</p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
 									<span class="icon solid style2 major fa-mountain"></span>
-									<h3>Alpine Views</h3>
-									<p>Stunning views of the Bernese Alps from the house and garden.</p>
+									<h3 data-i18n="a1_h">Alpine Views</h3>
+									<p data-i18n="a1_p">Stunning views of the Bernese Alps from the house and garden.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-seedling"></span>
-									<h3>Mediterranean Garden</h3>
-									<p>A lush, sunny garden with a patio for long summer evenings.</p>
+									<h3 data-i18n="a2_h">Mediterranean Garden</h3>
+									<p data-i18n="a2_p">A lush, sunny garden with a patio for long summer evenings.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-bed"></span>
-									<h3>4 Bedrooms · Sleeps 7</h3>
-									<p>Four bedrooms with four beds and two bathrooms.</p>
+									<h3 data-i18n="a3_h">4 Bedrooms · Sleeps 7</h3>
+									<p data-i18n="a3_p">Four bedrooms with four beds and two bathrooms.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-utensils"></span>
-									<h3>Full Kitchen</h3>
-									<p>Dishwasher, oven and an espresso coffee machine.</p>
+									<h3 data-i18n="a4_h">Full Kitchen</h3>
+									<p data-i18n="a4_p">Dishwasher, oven and an espresso coffee machine.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Wi-Fi</h3>
-									<p>Wireless internet throughout the house.</p>
+									<h3 data-i18n="a5_h">Wi-Fi</h3>
+									<p data-i18n="a5_p">Wireless internet throughout the house.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-temperature-high"></span>
-									<h3>Central Heating</h3>
-									<p>Full central heating keeps the whole house warm and cosy.</p>
+									<h3 data-i18n="a6_h">Central Heating</h3>
+									<p data-i18n="a6_p">Full central heating keeps the whole house warm and cosy.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-chair"></span>
-									<h3>Indoor &amp; Outdoor Dining</h3>
-									<p>Dining areas both inside the house and outside in the garden.</p>
+									<h3 data-i18n="a7_h">Indoor &amp; Outdoor Dining</h3>
+									<p data-i18n="a7_p">Dining areas both inside the house and outside in the garden.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-dumbbell"></span>
-									<h3>Home Gym</h3>
-									<p>A private fitness room so you never miss a workout.</p>
+									<h3 data-i18n="a8_h">Home Gym</h3>
+									<p data-i18n="a8_p">A private fitness room so you never miss a workout.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-tshirt"></span>
-									<h3>Washer</h3>
-									<p>In-house washing machine for longer stays.</p>
+									<h3 data-i18n="a9_h">Washer</h3>
+									<p data-i18n="a9_p">In-house washing machine for longer stays.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-tv"></span>
-									<h3>TV</h3>
-									<p>Flat-screen TV in the living room.</p>
+									<h3 data-i18n="a10_h">TV</h3>
+									<p data-i18n="a10_p">Flat-screen TV in the living room.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-car"></span>
-									<h3>Free Parking</h3>
-									<p>Free parking on the premises.</p>
+									<h3 data-i18n="a11_h">Free Parking</h3>
+									<p data-i18n="a11_p">Free parking on the premises.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-key"></span>
-									<h3>Self Check-in</h3>
-									<p>Arrive on your own schedule with easy self check-in.</p>
+									<h3 data-i18n="a12_h">Self Check-in</h3>
+									<p data-i18n="a12_p">Arrive on your own schedule with easy self check-in.</p>
 								</section>
 							</div>
 						</div>
@@ -282,45 +319,45 @@
 				<!-- Nearby attractions -->
 					<section class="wrapper style2 align-center" id="explore">
 						<div class="inner">
-							<h2>Explore the area</h2>
-							<p>Some of Switzerland&rsquo;s most beautiful places are right on your doorstep. Here are a few favourites within easy reach of the house.</p>
+							<h2 data-i18n="explore_h2">Explore the area</h2>
+							<p data-i18n="explore_p">Some of Switzerland&rsquo;s most beautiful places are right on your doorstep. Here are a few favourites within easy reach of the house.</p>
 							<div class="attractions">
 								<div class="card">
 									<img src="images/attractions/thun.jpg" class="thumb" alt="View over Thun old town and Lake Thun" />
 									<div class="card-body">
-										<span class="meta">≈ 10 min by car</span>
+										<span class="meta" data-i18n="thun_meta">≈ 10 min by car</span>
 										<h3>Thun</h3>
-										<p>A picture-perfect medieval old town with a hilltop castle, covered bridges and a lively promenade where the River Aare meets turquoise Lake Thun.</p>
+										<p data-i18n="thun_p">A picture-perfect medieval old town with a hilltop castle, covered bridges and a lively promenade where the River Aare meets turquoise Lake Thun.</p>
 									</div>
 								</div>
 								<div class="card">
 									<img src="images/attractions/interlaken.jpg" class="thumb" alt="Interlaken between Lake Thun and Lake Brienz" />
 									<div class="card-body">
-										<span class="meta">≈ 30 min by car</span>
+										<span class="meta" data-i18n="inter_meta">≈ 30 min by car</span>
 										<h3>Interlaken</h3>
-										<p>The adventure capital of the Bernese Oberland, set between two lakes. The gateway to the Jungfrau region, paragliding, boat trips and mountain railways.</p>
+										<p data-i18n="inter_p">The adventure capital of the Bernese Oberland, set between two lakes. The gateway to the Jungfrau region, paragliding, boat trips and mountain railways.</p>
 									</div>
 								</div>
 								<div class="card">
 									<img src="images/attractions/grindelwald.jpg" class="thumb" alt="Grindelwald village beneath the Eiger" />
 									<div class="card-body">
-										<span class="meta">≈ 50 min by car</span>
+										<span class="meta" data-i18n="grind_meta">≈ 50 min by car</span>
 										<h3>Grindelwald</h3>
-										<p>A storybook alpine village beneath the north face of the Eiger, with world-class hiking and skiing and the First and Jungfraujoch excursions nearby.</p>
+										<p data-i18n="grind_p">A storybook alpine village beneath the north face of the Eiger, with world-class hiking and skiing and the First and Jungfraujoch excursions nearby.</p>
 									</div>
 								</div>
 							</div>
-							<p class="attractions-credit">Area photos: Wikimedia Commons.</p>
+							<p class="attractions-credit" data-i18n="credit">Area photos: Wikimedia Commons.</p>
 						</div>
 					</section>
 
 				<!-- Booking CTA -->
 					<section class="wrapper style1 align-center" id="book">
 						<div class="inner">
-							<h2>Book your stay</h2>
-							<p>Availability, pricing and reservations are all handled securely through Airbnb. Click below to see open dates and book Alpine View Thierachern.</p>
+							<h2 data-i18n="book_h2">Book your stay</h2>
+							<p data-i18n="book_p">Availability, pricing and reservations are all handled securely through Airbnb. Click below to see open dates and book Alpine View Thierachern.</p>
 							<ul class="actions stacked">
-								<li><a href="https://www.airbnb.com/h/thierachern" target="_blank" rel="noopener" class="button big wide">Book on Airbnb</a></li>
+								<li><a href="https://www.airbnb.com/h/thierachern" target="_blank" rel="noopener" class="button big wide" data-i18n="btn_book">Book on Airbnb</a></li>
 							</ul>
 						</div>
 					</section>
@@ -333,7 +370,7 @@
 								<li><a href="https://www.google.com/maps/place/Thierachern" target="_blank" rel="noopener" class="icon solid style2 fa-map-marker-alt"><span class="label">Map</span></a></li>
 								<li><a href="https://www.instagram.com/alpine_view_thierachern/" target="_blank" rel="noopener" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 							</ul>
-							<p>Alpine View Thierachern · 3634 Thierachern, Bernese Oberland, Switzerland<br />
+							<p data-i18n="footer_p">Alpine View Thierachern · 3634 Thierachern, Bernese Oberland, Switzerland<br />
 							&copy; Alpine View Thierachern. Bookings via <a href="https://www.airbnb.com/h/thierachern" target="_blank" rel="noopener">Airbnb</a>.</p>
 						</div>
 					</footer>
@@ -348,6 +385,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/i18n.js"></script>
 
 	</body>
 </html>
