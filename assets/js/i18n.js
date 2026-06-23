@@ -78,6 +78,15 @@
 			grind_p: "A storybook alpine village beneath the north face of the Eiger, with world-class hiking and skiing and the First and Jungfraujoch excursions nearby.",
 			credit: "Area photos: Wikimedia Commons.",
 
+			gethere_h2: "How to get there",
+			gethere_p: "Alpine View Thierachern is at Steghaltenstrasse 2, 3634 Thierachern &mdash; easy to reach by car or by public transport.",
+			gh_car_h: "By car",
+			gh_car_p: "From the A6 motorway, take the Thun-S&uuml;d exit and continue about 10 minutes via Uetendorf to Thierachern. Free parking is available on site.",
+			gh_car_btn: "Get directions",
+			gh_pt_h: "By public transport",
+			gh_pt_p: "Take a train to Thun (direct InterCity connections from Bern, Zurich and Interlaken), then STI bus line 50, 51 or M27 to the &ldquo;Thierachern, Egg&rdquo; stop (about 10 minutes), followed by a short walk to the house.",
+			gh_pt_btn: "Plan your journey (SBB)",
+
 			book_h2: "Book your stay",
 			book_p: "Availability, pricing and reservations are all handled securely through Airbnb. Click below to see open dates and book Alpine View Thierachern.",
 
@@ -150,6 +159,15 @@
 			grind_meta: "≈ 50 Min. mit dem Auto",
 			grind_p: "Ein malerisches Bergdorf am Fusse der Eiger-Nordwand, mit erstklassigem Wandern und Skifahren sowie den Ausflügen zur First und zum Jungfraujoch.",
 			credit: "Fotos der Umgebung: Wikimedia Commons.",
+
+			gethere_h2: "Anreise",
+			gethere_p: "Alpine View Thierachern befindet sich an der Steghaltenstrasse 2, 3634 Thierachern &mdash; bequem mit dem Auto oder den öffentlichen Verkehrsmitteln erreichbar.",
+			gh_car_h: "Mit dem Auto",
+			gh_car_p: "Von der Autobahn A6 nehmen Sie die Ausfahrt Thun-Süd und fahren rund 10 Minuten über Uetendorf nach Thierachern. Kostenlose Parkplätze sind vor Ort vorhanden.",
+			gh_car_btn: "Route anzeigen",
+			gh_pt_h: "Mit öffentlichen Verkehrsmitteln",
+			gh_pt_p: "Mit dem Zug bis Thun (direkte InterCity-Verbindungen aus Bern, Zürich und Interlaken), dann mit dem STI-Bus der Linie 50, 51 oder M27 bis zur Haltestelle &bdquo;Thierachern, Egg&ldquo; (rund 10 Minuten) und anschliessend ein kurzer Fussweg zum Haus.",
+			gh_pt_btn: "Verbindung planen (SBB)",
 
 			book_h2: "Buchen Sie Ihren Aufenthalt",
 			book_p: "Verfügbarkeit, Preise und Reservierungen werden sicher über Airbnb abgewickelt. Klicken Sie unten, um freie Daten zu sehen und Alpine View Thierachern zu buchen.",
@@ -224,6 +242,15 @@
 			grind_p: "Un village alpin de carte postale au pied de la face nord de l'Eiger, avec randonnées et ski d'exception et les excursions au First et au Jungfraujoch à proximité.",
 			credit: "Photos des environs : Wikimedia Commons.",
 
+			gethere_h2: "Comment s'y rendre",
+			gethere_p: "Alpine View Thierachern se situe à la Steghaltenstrasse 2, 3634 Thierachern &mdash; facilement accessible en voiture ou en transports publics.",
+			gh_car_h: "En voiture",
+			gh_car_p: "Depuis l'autoroute A6, prenez la sortie Thun-Süd et continuez environ 10 minutes via Uetendorf jusqu'à Thierachern. Un parking gratuit est disponible sur place.",
+			gh_car_btn: "Itinéraire",
+			gh_pt_h: "En transports publics",
+			gh_pt_p: "Prenez le train jusqu'à Thoune (liaisons InterCity directes depuis Berne, Zurich et Interlaken), puis le bus STI ligne 50, 51 ou M27 jusqu'à l'arrêt « Thierachern, Egg » (environ 10 minutes), suivi d'une courte marche jusqu'à la maison.",
+			gh_pt_btn: "Planifier le trajet (CFF)",
+
 			book_h2: "Réservez votre séjour",
 			book_p: "Les disponibilités, les tarifs et les réservations sont gérés en toute sécurité via Airbnb. Cliquez ci-dessous pour voir les dates disponibles et réserver Alpine View Thierachern.",
 
@@ -297,6 +324,15 @@
 			grind_p: "Un pittoresco villaggio alpino ai piedi della parete nord dell'Eiger, con escursioni e sci di livello mondiale e le gite al First e allo Jungfraujoch nelle vicinanze.",
 			credit: "Foto della zona: Wikimedia Commons.",
 
+			gethere_h2: "Come arrivare",
+			gethere_p: "Alpine View Thierachern si trova in Steghaltenstrasse 2, 3634 Thierachern &mdash; facilmente raggiungibile in auto o con i mezzi pubblici.",
+			gh_car_h: "In auto",
+			gh_car_p: "Dall'autostrada A6 prendete l'uscita Thun-Süd e proseguite circa 10 minuti attraverso Uetendorf fino a Thierachern. Parcheggio gratuito disponibile in loco.",
+			gh_car_btn: "Indicazioni",
+			gh_pt_h: "Con i mezzi pubblici",
+			gh_pt_p: "Prendete il treno fino a Thun (collegamenti InterCity diretti da Berna, Zurigo e Interlaken), poi il bus STI linea 50, 51 o M27 fino alla fermata «Thierachern, Egg» (circa 10 minuti), seguito da una breve passeggiata fino alla casa.",
+			gh_pt_btn: "Pianifica il viaggio (FFS)",
+
 			book_h2: "Prenota il tuo soggiorno",
 			book_p: "Disponibilità, prezzi e prenotazioni sono gestiti in modo sicuro tramite Airbnb. Clicca qui sotto per vedere le date libere e prenotare Alpine View Thierachern.",
 
@@ -334,6 +370,10 @@
 			btns[j].classList.toggle("active", isActive);
 			btns[j].setAttribute("aria-pressed", isActive ? "true" : "false");
 		}
+
+		// SBB journey planner: keep the destination preset and match the language.
+		var sbb = document.getElementById("sbb-link");
+		if (sbb) sbb.setAttribute("href", "https://www.sbb.ch/" + lang + "?nach=Thierachern,+Egg");
 
 		window.AVT_LANG = lang;
 		setStored(lang);
